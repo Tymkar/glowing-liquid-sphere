@@ -19,6 +19,8 @@ section {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   border: 8px solid transparent;
+  animation: rollSphere 5s linear infinite;
+  transform-origin: bottom center;
 }
 
 .bowl::before {
@@ -56,6 +58,8 @@ section {
   border-bottom-left-radius: 150px;
   border-bottom-right-radius: 150px;
   filter: drop-shadow(0 0 80px #41c1fb);
+  animation: moveLiquid 5s linear infinite;
+  transform-origin: top center;
 }
 
 .liquid::before {
@@ -67,4 +71,15 @@ section {
   border-radius: 50%;
   top: -10px;
   filter: drop-shadow(0 0 80px #41c1fb);
+}
+
+.shadow {
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  top: calc(50% + 150px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
